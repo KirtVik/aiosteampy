@@ -168,8 +168,8 @@ class SteamCommunityPublicMixin(SteamHTTPTransportMixin):
                     prop_data["propertyid"],
                     prop_data.get("name", ""),
                     value,
-                    float_value=float_value,
-                    int_value=int_value
+                    float_value,
+                    int_value
                 ))
 
             properties_map[properties_data["assetid"]] = tuple(properties_list)
@@ -834,8 +834,8 @@ class SteamCommunityPublicMixin(SteamHTTPTransportMixin):
                                     prop_data["propertyid"],
                                     prop_data.get("name", ""),
                                     value,
-                                    float_value=float_value,
-                                    int_value=int_value
+                                    float_value,
+                                    int_value
                                 ))
 
                         items_map[key] = MarketListingItem(
